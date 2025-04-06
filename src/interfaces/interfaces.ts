@@ -1,5 +1,6 @@
 import { PropsButtons, PropsImage, PropsTitle } from '../components';
 import { ProductCardProps } from '../components/ProductCard';
+import {JSX} from "react";
 
 export interface Product {
   id: string;
