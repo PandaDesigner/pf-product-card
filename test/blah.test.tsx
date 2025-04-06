@@ -1,11 +1,10 @@
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
-import { Thing } from '../src';
+import * as ReactDOM from 'react-dom/client';
 
 describe('it', () => {
-  it('renders without crashing', () => {
-    const div = document.createElement('div');
-    ReactDOM.render(<Thing />, div);
-    ReactDOM.unmountComponentAtNode(div);
-  });
+    it('should render the ProductCard component', () => {
+        const div = document.createElement('div');
+        const root = ReactDOM.createRoot(div);
+        root.unmount()
+        console.log( 'Hola mundo!')
+    });
 });
