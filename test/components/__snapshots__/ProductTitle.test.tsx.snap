@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductTitle se debe mostrar el component correctamente con el titulo personalizado 1`] = `
+<span
+  className="productDescription custom"
+>
+  custom product
+</span>
+`;
