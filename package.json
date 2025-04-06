@@ -1,5 +1,5 @@
 {
-  "version": "0.0.1",
+  "version": "1.0.0-rc",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -10,6 +10,16 @@
   "engines": {
     "node": ">=10"
   },
+  "repository": {
+    "url": "https://github.com/PandaDesigner/pf-product-card",
+    "type": "github"
+  },
+  "keywords": [
+    "product",
+    "card",
+    "Pedro",
+    "Fernandez"
+  ],
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
