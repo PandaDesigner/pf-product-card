@@ -1,7 +1,7 @@
 import { CSSProperties, useCallback, useContext } from 'react';
 import { ProductContext } from './ProductCard';
 // @ts-ignore
-import styles from '../styles/styles.module.css'
+import styles from '../styles/styles.module.css';
 import React from 'react';
 
 export interface PropsButtons {
@@ -22,9 +22,8 @@ export const ProductButtons = ({ className, style }: PropsButtons) => {
   return (
     <div className={`${styles.buttonsContainer} ${className}`} style={style}>
       <button
-        className={`${styles.buttonMinus} ${
-          isMinReached() && styles.disable__right
-        }`}
+        className={`${styles.buttonMinus} ${isMinReached() && styles.disable__right
+          }`}
         onClick={() => increaseBy(-1)}
         disabled={isMinReached()}
       >
@@ -32,9 +31,8 @@ export const ProductButtons = ({ className, style }: PropsButtons) => {
       </button>
       <div className={styles.countLabel}> {counter} </div>
       <button
-        className={`${styles.buttonAdd} ${
-          isMaxReached() && styles.disable__left
-        }`}
+        className={`${styles.buttonAdd} ${isMaxReached() && styles.disable__left
+          }`}
         onClick={() => increaseBy(1)}
         disabled={isMaxReached()}
       >
